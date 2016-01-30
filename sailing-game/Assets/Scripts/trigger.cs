@@ -3,38 +3,42 @@ using System.Collections;
 
 public class trigger : MonoBehaviour {
 
+	public GameObject canvas;
 	public GameObject book;
 	public BoatControl BoatControl;
 	public dialogue dialogue;
+	private bool textDisp;
 
 	// Use this for initialization
 	void Start () {
+		textDisp = true;
+		canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
+		dialogue.S1();
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 	void OnTriggerEnter2D(Collider2D target) {
 		BoatControl.inputEnabled = false;
 		BoatControl.boatSpeedSet = 0;
 		book.SetActive(true);
 		if (target.gameObject.tag == "trigger-1") {
 			Debug.Log("trigger 1 activated");
-			dialogue.Script2A();
+			textDisp = true;
+			Debug.Log(textDisp);
+			canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
+			dialogue.K1();
 		}
 		if (target.gameObject.tag == "trigger-2") {
 			Debug.Log("trigger 2 activated");
-			dialogue.Script2A();
+			dialogue.K1();
 		}
 		if (target.gameObject.tag == "trigger-3") {
 			Debug.Log("trigger 3 activated");
-			dialogue.Script2A();
+			dialogue.K1();
 		}
 		if (target.gameObject.tag == "trigger-4") {
 			Debug.Log("trigger 4 activated");
-			dialogue.Script2A();
+			dialogue.K1();
 		}
 
 	}
