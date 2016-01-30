@@ -13,6 +13,10 @@ public class dialogue : MonoBehaviour {
 
 	public Text dialogueText;
 
+	public bool textDisp;
+
+	public trigger trigger;
+
 	public Button ans1;
 	public Button ans2;
 	public Button ans3;
@@ -57,6 +61,10 @@ public class dialogue : MonoBehaviour {
 		ans2obj.SetActive (false);
 		ans3obj.SetActive (false);
 
+    ans1.onClick.RemoveAllListeners();
+    ans2.onClick.RemoveAllListeners();
+    ans3.onClick.RemoveAllListeners();
+
     ans1.onClick.AddListener(S2);
     // ans2.onClick.AddListener(Script1B);
     // ans3.onClick.AddListener(Script1A);
@@ -73,7 +81,11 @@ public class dialogue : MonoBehaviour {
 		ans2obj.SetActive (false);
 		ans3obj.SetActive (false);
 
-		// ans1.onClick close dialogue
+    ans1.onClick.RemoveAllListeners();
+    ans2.onClick.RemoveAllListeners();
+    ans3.onClick.RemoveAllListeners();
+
+		ans1.onClick.AddListener(trigger.ClosePanel);
 
     // ans1.onClick.AddListener(Script2A);
     // ans2.onClick.AddListener(Script2B);
@@ -91,6 +103,10 @@ public class dialogue : MonoBehaviour {
 		ans2obj.SetActive (true);
 		ans3obj.SetActive (true);
 
+    ans1.onClick.RemoveAllListeners();
+    ans2.onClick.RemoveAllListeners();
+    ans3.onClick.RemoveAllListeners();
+
     ans1.onClick.AddListener(K1A);
     ans2.onClick.AddListener(K1B);
     ans3.onClick.AddListener(K1C);
@@ -106,6 +122,10 @@ public class dialogue : MonoBehaviour {
 		ans2obj.SetActive (false);
 		ans3obj.SetActive (false);
 
+    ans1.onClick.RemoveAllListeners();
+    ans2.onClick.RemoveAllListeners();
+    ans3.onClick.RemoveAllListeners();
+
     ans1.onClick.AddListener(K2);
     // ans2.onClick.AddListener(Script1B);
     // ans3.onClick.AddListener(Script1A);
@@ -120,6 +140,10 @@ public class dialogue : MonoBehaviour {
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (false);
 		ans3obj.SetActive (false);
+
+    ans1.onClick.RemoveAllListeners();
+    ans2.onClick.RemoveAllListeners();
+    ans3.onClick.RemoveAllListeners();
 
     ans1.onClick.AddListener(K2);
     // ans2.onClick.AddListener(Script1B);
@@ -137,6 +161,10 @@ public class dialogue : MonoBehaviour {
 		ans2obj.SetActive (false);
 		ans3obj.SetActive (false);
 
+    ans1.onClick.RemoveAllListeners();
+    ans2.onClick.RemoveAllListeners();
+    ans3.onClick.RemoveAllListeners();
+
     ans1.onClick.AddListener(K2);
     // ans2.onClick.AddListener(Script1B);
     // ans3.onClick.AddListener(Script1A);
@@ -152,6 +180,10 @@ public class dialogue : MonoBehaviour {
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (true);
 		ans3obj.SetActive (false);
+
+    ans1.onClick.RemoveAllListeners();
+    ans2.onClick.RemoveAllListeners();
+    ans3.onClick.RemoveAllListeners();
 
     ans1.onClick.AddListener(K2A);
     ans2.onClick.AddListener(K2B);
@@ -169,13 +201,17 @@ public class dialogue : MonoBehaviour {
 		ans2obj.SetActive (false);
 		ans3obj.SetActive (false);
 
-    ans1.onClick.AddListener(K2);
+    ans1.onClick.RemoveAllListeners();
+    ans2.onClick.RemoveAllListeners();
+    ans3.onClick.RemoveAllListeners();
+
+    // ans1.onClick.AddListener(K2);
     // ans2.onClick.AddListener(Script1B);
     // ans3.onClick.AddListener(Script1A);
 
-// ans1.onClick close dialogue
+		ans1.onClick.AddListener(trigger.ClosePanel);
 
-    // ans1text.text = "Set Sail!";
+    ans1text.text = "Set Sail!";
     // ans2text.text = "Lorem1B";
     // ans3text.text = "Lorem3";
   }
@@ -187,7 +223,11 @@ public class dialogue : MonoBehaviour {
 		ans2obj.SetActive (false);
 		ans3obj.SetActive (false);
 
-		// ans1.onClick close dialogue
+    ans1.onClick.RemoveAllListeners();
+    ans2.onClick.RemoveAllListeners();
+    ans3.onClick.RemoveAllListeners();
+
+		ans1.onClick.AddListener(trigger.ClosePanel);
 
     // ans1.onClick.AddListener(K2);
     // ans2.onClick.AddListener(Script1B);
