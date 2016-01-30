@@ -7,7 +7,7 @@ public class BoatControl : MonoBehaviour {
 
 	//DECLARING PRIVATE VARIABLES
 	private Rigidbody2D boatRigid;
-	private bool moveNot;
+	public bool moveNot;
 	private bool moveSlow;
 	private bool moveFast;
 	private float boatSpeed;
