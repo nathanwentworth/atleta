@@ -66,7 +66,7 @@ public class dialogue : MonoBehaviour {
     // ans3text.text = "Lorem3";
   }
 
-  private void S2() {
+  void S2() {
     dialogueText.text = "Atleta was given a Pāua shell, beautiful beyond compare, a giant red-gray fish with sharp scales, and ten loaves of soda bread, as well as supplies for the journey.";
 
 		ans1obj.SetActive (true);
