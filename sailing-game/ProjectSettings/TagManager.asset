@@ -8,6 +8,8 @@ TagManager:
   - trigger-2
   - trigger-3
   - trigger-4
+  - WhirlpoolStart
+  - WhirlpoolEnd
   layers:
   - Default
   - TransparentFX
