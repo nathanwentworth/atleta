@@ -18,15 +18,26 @@ public class trigger : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D target) {
-		// BoatControl.boatSpeedSet = 0;
+		BoatControl.boatSpeedSet = 0;
+	}
+	void OnTriggerEnter2D(Collider2D target) {
+		book.SetActive(true);
 		if (target.gameObject.tag == "trigger-1") {
 			Debug.Log("trigger 1 activated");
 			dialogue.Script2A();
 		}
-	}
-	void OnTriggerEnter2D(Collider2D target) {
-		// move stop function call
+		if (target.gameObject.tag == "trigger-2") {
+			Debug.Log("trigger 2 activated");
+			dialogue.Script2A();
+		}
+		if (target.gameObject.tag == "trigger-3") {
+			Debug.Log("trigger 3 activated");
+			dialogue.Script2A();
+		}
+		if (target.gameObject.tag == "trigger-4") {
+			Debug.Log("trigger 4 activated");
+			dialogue.Script2A();
+		}
 
-		book.SetActive(true);
 	}
 }

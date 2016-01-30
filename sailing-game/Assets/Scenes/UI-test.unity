@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bea7030b14867f44a7da6fc99be7c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveNot: 0
+  boatSpeedSet: 0
 --- !u!60 &186225199
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -620,7 +620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.99817395, g: 0.9144217, b: 0.723484, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
