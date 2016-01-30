@@ -708,6 +708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef264767558f474690b9d9f74fdff85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  book: {fileID: 200038077}
   ans1text: {fileID: 93288333}
   ans2text: {fileID: 2016445304}
   ans3text: {fileID: 342645292}
@@ -715,6 +716,9 @@ MonoBehaviour:
   ans1: {fileID: 803665391}
   ans2: {fileID: 1942277845}
   ans3: {fileID: 1372545416}
+  ans1obj: {fileID: 803665389}
+  ans2obj: {fileID: 1942277843}
+  ans3obj: {fileID: 1372545414}
 --- !u!1 &575991586
 GameObject:
   m_ObjectHideFlags: 0
