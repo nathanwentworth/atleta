@@ -16,11 +16,9 @@ public class trigger : MonoBehaviour {
 	void Update () {
 	
 	}
-
-	void OnTriggerStay2D(Collider2D target) {
-		BoatControl.boatSpeedSet = 0;
-	}
 	void OnTriggerEnter2D(Collider2D target) {
+		BoatControl.inputEnabled = false;
+		BoatControl.boatSpeedSet = 0;
 		book.SetActive(true);
 		if (target.gameObject.tag == "trigger-1") {
 			Debug.Log("trigger 1 activated");
