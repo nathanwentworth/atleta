@@ -4,11 +4,12 @@ using System.Collections;
 public class BoatControl : MonoBehaviour {
 
 	//SERIALZED FIELD VARIABLES
+	public int boatSpeedSet;
+	public bool inputEnabled;
 
 	//DECLARING PRIVATE VARIABLES
 	private Rigidbody2D boatRigid;
 	private float boatSpeed;
-	public int boatSpeedSet;
 
 	void Start () {
 
@@ -16,27 +17,31 @@ public class BoatControl : MonoBehaviour {
 		boatRigid = this.GetComponent<Rigidbody2D> ();
 		boatSpeed = 0;
 		boatSpeedSet = 0;
+		inputEnabled = true;
 	}
 
 	void Update () {
 
-		//BOAT ROTATION
-		float moveY = Input.GetAxis ("Horizontal");
-		if (moveY < 0) {
-			transform.Rotate (35 * (-Vector3.forward * Time.deltaTime));
-		} else if (moveY > 0) {
-			transform.Rotate (35 * (Vector3.forward * Time.deltaTime));
-		}
+		if (inputEnabled) {
 
-		//BOAT SPEED SET INPUT
-		if (Input.GetKeyDown (KeyCode.Alpha1)) {
-			boatSpeedSet = 0;
-		}
-		if (Input.GetKeyDown (KeyCode.Alpha2)) {
-			boatSpeedSet = 1;
-		}
-		if (Input.GetKeyDown (KeyCode.Alpha3)) {
-			boatSpeedSet = 2;
+			//BOAT ROTATION
+			float moveY = Input.GetAxis ("Horizontal");
+			if (moveY < 0) {
+				transform.Rotate (35 * (-Vector3.forward * Time.deltaTime));
+			} else if (moveY > 0) {
+				transform.Rotate (35 * (Vector3.forward * Time.deltaTime));
+			}
+
+			//BOAT SPEED SET INPUT
+			if (Input.GetKeyDown (KeyCode.Alpha1)) {
+				boatSpeedSet = 0;
+			}
+			if (Input.GetKeyDown (KeyCode.Alpha2)) {
+				boatSpeedSet = 1;
+			}
+			if (Input.GetKeyDown (KeyCode.Alpha3)) {
+				boatSpeedSet = 2;
+			}
 		}
 			
 		switch (boatSpeedSet) {
