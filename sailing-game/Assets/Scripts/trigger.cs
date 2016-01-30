@@ -14,6 +14,7 @@ public class trigger : MonoBehaviour {
 		textDisp = true;
 		canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
 		dialogue.S1();
+		BoatControl.inputEnabled = true;
 	
 	}
 
@@ -30,16 +31,24 @@ public class trigger : MonoBehaviour {
 		}
 		if (target.gameObject.tag == "trigger-2") {
 			Debug.Log("trigger 2 activated");
+			canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
 			dialogue.K1();
 		}
 		if (target.gameObject.tag == "trigger-3") {
 			Debug.Log("trigger 3 activated");
+			canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
 			dialogue.K1();
 		}
 		if (target.gameObject.tag == "trigger-4") {
 			Debug.Log("trigger 4 activated");
+			canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
 			dialogue.K1();
 		}
-
+	}
+	public void ClosePanel() {
+		textDisp = false;
+		canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
+		BoatControl.inputEnabled = true;
+		BoatControl.boatSpeedSet = 0;
 	}
 }
