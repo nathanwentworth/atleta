@@ -50,7 +50,7 @@ public class dialogue : MonoBehaviour {
     }
   }
 
-  private void IntroScript() {  
+  public void IntroScript() {  
     dialogueText.text = "This is a sample block of text! If this is showing up, that means the script is working properly. I want to make this long enough so that it actually fills at least a few lines. Now to test how \nline breaks \nwork i'm just gonna throw some in. \nokay cool let's see how that looks!";
 	
 		ans1obj.SetActive (true);
@@ -66,7 +66,7 @@ public class dialogue : MonoBehaviour {
     ans3text.text = "Lorem3";
   }
 
-  private void Script1A() {
+  public void Script1A() {
     dialogueText.text = "This is more sample text! if this shows up, then you clicked a button and it properly called the second dialogue bit. ";
 
 		ans1obj.SetActive (true);
@@ -82,7 +82,7 @@ public class dialogue : MonoBehaviour {
     ans3text.text = " ";
   }
 
-  private void Script1B() {
+  public void Script1B() {
     dialogueText.text = "This is a second dialogue choice. it'll show you different dialogue than the first choice, which is A ";
 
 		ans1obj.SetActive (true);
@@ -97,7 +97,7 @@ public class dialogue : MonoBehaviour {
     ans2text.text = "Lorem1B";
     ans3text.text = "Lorem3";
   }
-  private void Script2A() {
+  public void Script2A() {
     dialogueText.text = "You entered the trigger and this is the first option of the first split";
 
 		ans1obj.SetActive (true);
@@ -112,7 +112,7 @@ public class dialogue : MonoBehaviour {
     ans2text.text = "Lorem1B";
     ans3text.text = "Lorem3";
   }
-  private void Script2B() {
+  public void Script2B() {
     dialogueText.text = "You entered the trigger and this is the second option of the first split";
 
 		ans1obj.SetActive (true);

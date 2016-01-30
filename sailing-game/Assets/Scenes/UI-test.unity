@@ -268,6 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bea7030b14867f44a7da6fc99be7c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveNot: 0
 --- !u!60 &186225199
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -358,6 +359,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8885a5c4f4a234d558ff9dfaafe270c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  book: {fileID: 380975795}
+  BoatControl: {fileID: 186225198}
+  dialogue: {fileID: 1489761758}
 --- !u!1 &216555735
 GameObject:
   m_ObjectHideFlags: 0
