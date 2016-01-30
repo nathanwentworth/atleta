@@ -10,11 +10,13 @@ public class BoatControl : MonoBehaviour {
 	//DECLARING PRIVATE VARIABLES
 	private Rigidbody2D boatRigid;
 	private float boatSpeed;
+	private TrailRenderer trail;
 
 	void Start () {
 
 		//INITIALIZING VARIABLES
 		boatRigid = this.GetComponent<Rigidbody2D> ();
+		trail = this.GetComponent<TrailRenderer> ();
 		boatSpeed = 0;
 		boatSpeedSet = 0;
 		inputEnabled = true;
@@ -54,6 +56,12 @@ public class BoatControl : MonoBehaviour {
 		case 2:
 			BoatFast ();
 			break;
+		}
+
+		if (Mathf.Abs (boatRigid.velocity.y) <= 0.05 && Mathf.Abs (boatRigid.velocity.x) <= 0.05) {
+			trail.enabled = false;
+		} else {
+			trail.enabled = true;
 		}
 
 		//END UPDATE
