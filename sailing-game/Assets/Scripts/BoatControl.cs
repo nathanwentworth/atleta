@@ -7,19 +7,15 @@ public class BoatControl : MonoBehaviour {
 
 	//DECLARING PRIVATE VARIABLES
 	private Rigidbody2D boatRigid;
-	public bool moveNot;
-	private bool moveSlow;
-	private bool moveFast;
 	private float boatSpeed;
+	public int boatSpeedSet;
 
 	void Start () {
 
 		//INITIALIZING VARIABLES
 		boatRigid = this.GetComponent<Rigidbody2D> ();
-		moveNot = true;
-		moveSlow = false;
-		moveFast = false;
 		boatSpeed = 0;
+		boatSpeedSet = 0;
 	}
 
 	void Update () {
@@ -32,37 +28,44 @@ public class BoatControl : MonoBehaviour {
 			transform.Rotate (35 * (Vector3.forward * Time.deltaTime));
 		}
 
-		//BOAT STOP
+		//BOAT SPEED SET INPUT
 		if (Input.GetKeyDown (KeyCode.Alpha1)) {
-			moveFast = false;
-			moveSlow = false;
-			moveNot = true;
+			boatSpeedSet = 0;
 		}
-		if (moveNot) {
-			boatSpeed = Mathf.Lerp (boatSpeed, 0, Time.deltaTime);
-			boatRigid.velocity = transform.up * boatSpeed;
-		}
-
-		//BOAT SLOW SPEED
 		if (Input.GetKeyDown (KeyCode.Alpha2)) {
-			moveNot = false;
-			moveFast = false;
-			moveSlow = true;
-			}
-		if (moveSlow) {
-			boatSpeed = Mathf.Lerp (boatSpeed, -0.5f, Time.deltaTime);
-			boatRigid.velocity = transform.up * boatSpeed;
+			boatSpeedSet = 1;
+		}
+		if (Input.GetKeyDown (KeyCode.Alpha3)) {
+			boatSpeedSet = 2;
+		}
+			
+		switch (boatSpeedSet) {
+		case 0:
+			BoatStop ();
+			break;
+		case 1:
+			BoatSlow ();
+			break;
+		case 2:
+			BoatFast ();
+			break;
 		}
 
-		//BOAT FAST SPEED
-		if (Input.GetKeyDown (KeyCode.Alpha3)) {
-			moveNot = false;
-			moveSlow = false;
-			moveFast = true;
-		}
-		if (moveFast) {
-			boatSpeed = Mathf.Lerp(boatSpeed, -1, Time.deltaTime);
-			boatRigid.velocity = transform.up * boatSpeed;
-		}
+		//END UPDATE
+	}
+
+	private void BoatStop(){
+		boatSpeed = Mathf.Lerp (boatSpeed, 0, Time.deltaTime);
+		boatRigid.velocity = transform.up * boatSpeed;
+	}
+
+	private void BoatSlow(){
+		boatSpeed = Mathf.Lerp (boatSpeed, -0.5f, Time.deltaTime);
+		boatRigid.velocity = transform.up * boatSpeed;
+	}
+
+	private void BoatFast(){
+		boatSpeed = Mathf.Lerp (boatSpeed, -1, Time.deltaTime);
+		boatRigid.velocity = transform.up * boatSpeed;
 	}
 }
