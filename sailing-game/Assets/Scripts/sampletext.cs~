@@ -15,10 +15,6 @@ public class sampletext : MonoBehaviour {
   public Button ans2;
   public Button ans3;
 
-  private string ans1string;
-  private string ans2string;
-  private string ans3string;
-
   private bool ans1interactable;
   private bool ans2interactable;
   private bool ans3interactable;
@@ -47,89 +43,62 @@ public class sampletext : MonoBehaviour {
     }
   }
 
-  private void IntroScript() {
-
-    ans1.interactable = ans2.interactable = ans3.interactable = false;
-  
+  private void IntroScript() {  
     dialogueText.text = "This is a sample block of text! If this is showing up, that means the script is working properly. I want to make this long enough so that it actually fills at least a few lines. Now to test how \nline breaks \nwork i'm just gonna throw some in. \nokay cool let's see how that looks!";
 
     ans1.onClick.AddListener(Script1A);
     ans2.onClick.AddListener(Script1B);
     ans3.onClick.AddListener(Script1A);
 
-    ans1string = "Lorem1A";
-    ans2string = "Lorem1B";
-    ans3string = "Lorem3";
-
-    ans1interactable = true;
-    ans2interactable = true;
-    ans3interactable = true;
+    ans1text.text = "Lorem1A";
+    ans2text.text = "Lorem1B";
+    ans3text.text = "Lorem3";
   }
 
   private void Script1A() {
-
-    ans1.interactable = ans2.interactable = ans3.interactable = false;
-
     dialogueText.text = "This is more sample text! if this shows up, then you clicked a button and it properly called the second dialogue bit. ";
 
     ans1.onClick.AddListener(Script2A);
     ans2.onClick.AddListener(Script2B);
     ans3.onClick.AddListener(Script1A);
 
-    ans1string = "Lorem2A";
-    ans2string = "Lorem2B";
-    ans3string = " ";
-
-    ans1interactable = ans2interactable = true;
+    ans1text.text = "Lorem2A";
+    ans2text.text = "Lorem2B";
+    ans3text.text = " ";
   }
 
   private void Script1B() {
-
-    ans1.interactable = ans2.interactable = ans3.interactable = false;
-
     dialogueText.text = "This is a second dialogue choice. it'll show you different dialogue than the first choice, which is A ";
 
     ans1.onClick.AddListener(Script1A);
     ans2.onClick.AddListener(Script1B);
     ans3.onClick.AddListener(Script1A);
 
-    ans1string = "Lorem1A";
-    ans2string = "Lorem1B";
-    ans3string = "Lorem3";
-
-    ans1interactable = ans2interactable = ans3interactable = true;  
+    ans1text.text = "Lorem1A";
+    ans2text.text = "Lorem1B";
+    ans3text.text = "Lorem3";
   }
   private void Script2A() {
-
-    ans1.interactable = ans2.interactable = ans3.interactable = false;
-
     dialogueText.text = "You entered the trigger and this is the first option of the first split";
 
     ans1.onClick.AddListener(Script1A);
     ans2.onClick.AddListener(Script1B);
     ans3.onClick.AddListener(Script1A);
 
-    ans1string = "Lorem1A";
-    ans2string = "Lorem1B";
-    ans3string = "Lorem3";
-
-    ans1interactable = ans2interactable = ans3interactable = true;  
+    ans1text.text = "Lorem1A";
+    ans2text.text = "Lorem1B";
+    ans3text.text = "Lorem3";
   }
   private void Script2B() {
-
-    ans1.interactable = ans2.interactable = ans3.interactable = false;
-
     dialogueText.text = "You entered the trigger and this is the second option of the first split";
 
     ans1.onClick.AddListener(Script1A);
     ans2.onClick.AddListener(Script1B);
     ans3.onClick.AddListener(Script1A);
 
-    ans1string = "Lorem1A";
-    ans2string = "Lorem1B";
-    ans3string = "Lorem3";
-
-    ans1interactable = ans2interactable = ans3interactable = true;  
+    ans1text.text = "Lorem1A";
+    ans2text.text = "Lorem1B";
+    ans3text.text = "Lorem3";
   }
 
 }
