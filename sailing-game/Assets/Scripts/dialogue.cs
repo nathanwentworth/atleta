@@ -116,7 +116,7 @@ public class dialogue : MonoBehaviour {
 		
   public void S1() {  
 		PlayPageSound ();
-    dialogueText.text = "On the morning of her 16th birthday, Atleta woke to the familiar sounds of her village, An Tara, and the sea that it belonged to. Her mother beamed with pride and her father watched Atleta drive the last nails into the hull of her very own boat. The village gathered on the coarse shore and listened to her father’s booming voice: \n\n“Atleta, my beautiful daughter, you are on this day 16 summers on land; from this moment henceforth you are of the sea. To become one of us, you must visit our neighbors to the WEST, NORTH, and EAST, and complete the rituals their leaders give you, then fly the flag of their island on your boat.”";
+    dialogueText.text = "On the morning of her 16th birthday, Atleta woke to the familiar sounds of her village, An Tara, and the sea that it belonged to. Her mother beamed with pride and her father watched Atleta drive the last nails into the hull of her very own boat. The village gathered on the coarse shore and listened to her father’s booming voice:\n\n“Atleta, my beautiful daughter, you are on this day 16 summers on land; from this moment henceforth you are of the sea. To become one of us, you must visit our neighbors to the WEST, NORTH, and EAST, and complete the rituals their leaders give you, then fly the flag of their island on your boat.”";
 	
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (false);
@@ -161,7 +161,7 @@ public class dialogue : MonoBehaviour {
   }
 
   public void K1() {
-		dialogueText.text = "The wind was warmer and the sand finer on KIRKJA; as Atleta ran her boat ashore, a woman in fine silks emerged from her home and greeted Atleta with open arms, and with the flag of the island. \n\n“You must be Atleta of An Tara, out on the water at last! How has your journey been thus far?”";
+		dialogueText.text = "The wind was warmer and the sand finer on KIRKJA; as Atleta ran her boat ashore, a woman in fine silks emerged from her home and greeted Atleta with open arms, and with the flag of the island.\n\n“You must be Atleta of An Tara, out on the water at last! How has your journey been thus far?”";
 
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (true);
@@ -181,7 +181,7 @@ public class dialogue : MonoBehaviour {
   }
   public void K1A() {
 		PlayPageSound ();
-    dialogueText.text = "“Glad to hear it. It smiles on us more often here, but I know that where you’re coming from, as well as where you’re going, it’s not necessarily that way.” the woman said. “Do you have in your possession a shell of incomparable beauty?”\n\nAtleta showed the woman the Pāua shell. It gleamed in the sunlight, luminously green, blue, and purple. It was perfectly smooth and soft to the touch -- Atleta had never seen something like it in her life, and wondered where it had come from. ";
+    dialogueText.text = "“Glad to hear it. It smiles on us more often here, but I know that where you’re coming from, as well as where you’re going, it’s not necessarily that way.” the woman said. “Do you have in your possession a shell of incomparable beauty?”\n\nAtleta showed the woman the Pāua shell. It gleamed in the sunlight, luminously green, blue, and purple. It was perfectly smooth and soft to the touch -- Atleta had never seen something like it in her life, and wondered where it had come from.";
 
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (false);
@@ -201,7 +201,7 @@ public class dialogue : MonoBehaviour {
   }
   public void K1B() {
 		PlayPageSound ();
-    dialogueText.text = "“It happens to us all, child. I once sailed into a fog bank and went in circles around this very island for nearly a day,” the woman said. “Do you have in your possession a shell of incomparable beauty?”\n\nAtleta showed the woman the Pāua shell. It gleamed in the sunlight, luminously green, blue, and purple. It was perfectly smooth and soft to the touch -- Atleta had never seen something like it in her life, and wondered where it had come from. ";
+    dialogueText.text = "“It happens to us all, child. I once sailed into a fog bank and went in circles around this very island for nearly a day,” the woman said. “Do you have in your possession a shell of incomparable beauty?”\n\nAtleta showed the woman the Pāua shell. It gleamed in the sunlight, luminously green, blue, and purple. It was perfectly smooth and soft to the touch -- Atleta had never seen something like it in her life, and wondered where it had come from.";
 
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (false);
@@ -243,7 +243,7 @@ public class dialogue : MonoBehaviour {
 
   public void K2() {
 		PlayPageSound ();
-    dialogueText.text = "“Such a beautiful gift from the sea”, the woman said as she held it in her hands.\n“However, these great gifts the sea tempts us with, we cannot keep. These shells are only found in our world under the tongue of sacred sea-beasts who wash ashore or are killed in the shallows. Even as you and I stare at its beauty, we are slowly being cursed.\n“You must throw this shell into the sea, and never think of it again.”\nAtleta looked down at the jewel of the sea in her hand and felt its allure reach out to her.";
+    dialogueText.text = "“Such a beautiful gift from the sea”, the woman said as she held it in her hands. “However, these great gifts the sea tempts us with, we cannot keep. These shells are only found in our world under the tongue of sacred sea-beasts who wash ashore or are killed in the shallows. Even as you and I stare at its beauty, we are slowly being cursed.\n\n“You must throw this shell into the sea, and never think of it again.”\n\nAtleta looked down at the jewel of the sea in her hand and felt its allure reach out to her.";
 
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (true);
@@ -308,7 +308,7 @@ public class dialogue : MonoBehaviour {
     // ans3text.text = "Lorem3";
   }
   public void V1() {
-    dialogueText.text = "Snow flurried as Atleta reached VANWAR, a mountainous, cragged isle. The dock was bustling as she tied her boat up, and she found herself amongst burly men and hardy women bringing in the day’s catch, steeled against the cold and wrapped in furs. A particularly burly man wrapped in many furs awaited Atleta at doors to a great hall, with his island’s flag in hand:\n\n“Hello, sweet child. I haven’t seen you since you were a babe, maybe,” - he made a barely perceptible gap between his index finger and thumb - “this big. Probably smaller.” He then burst into raucous laughter. “I am Skarsen, chief of Vanwar and the greatest chef of all the isles. Have you brought me a kingly gift?”";
+    dialogueText.text = "Snow flurried as Atleta reached VANWAR, a mountainous, cragged isle. The dock was bustling as she tied up her boat, and she found herself amongst burly men and hardy women bringing in the day’s catch, steeled against the cold and wrapped in furs. A particularly burly man wrapped in many furs awaited Atleta at doors to a great hall, with his island’s flag in hand:\n\n“Hello, sweet child. I haven’t seen you since you were a babe, maybe,” - he made a barely perceptible gap between his index finger and thumb - “this big. Probably smaller.” He then burst into raucous laughter. “I am Skarsen, chief of Vanwar and the greatest chef of all the isles. Have you brought me a kingly gift?”";
 
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (false);
@@ -350,7 +350,7 @@ public class dialogue : MonoBehaviour {
   }
   public void V3() {
 		PlayPageSound ();
-    dialogueText.text = "That night at the great hall, the room was packed with the men and women of Vanmar laughing, drinking, and awaiting this fabled meal. When Skarsen emerged from the kitchen, the ugly red-gray fish looked barely any different, yet was steaming. He set it in front of Atleta: \n\n“The sea gives everything we need, and for this we are eternally grateful. To survive we must take whatever we can get, no matter if it is, perhaps, less palatable than we’d like. Eat this beast of the sea, Atleta, and become one of us.”";
+    dialogueText.text = "That night at the great hall, the room was packed with the men and women of Vanmar laughing, drinking, and awaiting this fabled meal. When Skarsen emerged from the kitchen, the ugly red-gray fish looked barely any different, yet was steaming. He set it in front of Atleta:\n\n“The sea gives everything we need, and for this we are eternally grateful. To survive we must take whatever we can get, no matter if it is, perhaps, less palatable than we’d like. Eat this beast of the sea, Atleta, and become one of us.”";
 
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (false);
@@ -456,7 +456,7 @@ public class dialogue : MonoBehaviour {
 
   public void B2() {
 		PlayPageSound ();
-    dialogueText.text = "Atleta sat by the fire -- she hadn’t noticed how cold she was, or how far from home she had journeyed already. She took the single sweet cake her mother, this old woman’s daughter, made for her, and decided now was the time for it.\n\n“Now to be arrogant, but did you know you were named after me?” the old woman said. “I too am Atleta, but I did it first. Time will tell if I do more with the name, but you look like you could do something interesting with it. Now, time for your first lesson, a story: \n\n“When I was a lady only a bit older than you, I met the love of my life. A few years later the gods delivered us a baby, washed ashore on piece of wreckage and crying endlessly. And so the sea delivered for me everything I ever wanted. But a few years later, as our baby boy found his legs and my love found her courage, they sailed out to catch an anniversary dinner and a terrible beast took them. And so the sea took from me everything that I wanted. What do you think I did next?”";
+    dialogueText.text = "Atleta sat by the fire -- she hadn’t noticed how cold she was, or how far from home she had journeyed already. She took the single sweet cake her mother, this old woman’s daughter, made for her, and decided now was the time for it.\n\n“Now to be arrogant, but did you know you were named after me?” the old woman said. “I too am Atleta, but I did it first. Time will tell if I do more with the name, but you look like you could do something interesting with it. Now, time for your first lesson, a story:\n\n“When I was a lady only a bit older than you, I met the love of my life. A few years later the gods delivered us a baby, washed ashore on piece of wreckage and crying endlessly. And so the sea delivered for me everything I ever wanted. But a few years later, as our baby boy found his legs and my love found her courage, they sailed out to catch an anniversary dinner and a terrible beast took them. And so the sea took from me everything that I wanted. What do you think I did next?”";
 
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (true);
@@ -471,13 +471,13 @@ public class dialogue : MonoBehaviour {
     ans3.onClick.AddListener(B2C);
 
     ans1text.text = "“You cried.”";
-    ans2text.text = "“You cried.”";
+    ans2text.text = "“You started over.”";
     ans3text.text = "“You hunted.”";
   }
 
   public void B2A() {
 		PlayPageSound ();
-    dialogueText.text = "Atleta the Senior laughed haughtily. “Yes, yes I did. A lot. But that’s not the important part, that’s just something we all must do from time to time.” She reached over to the ornate spear, covered in carved symbols; she held it as if it was a natural extension of her arm. \n\n“I hunted. I scoured the waters around this island ‘till I found the beast and fought it for three days and three nights, only to awake bleeding on this very shore. Two years later, with a new ship and this very spear, I found it again. Who knows how many days and nights that was. But it ended this time with the beast bleeding on the beach, not I. I took its bones and used them to build this house, and now here I am.” The old woman leaned in:\n\n“If the sea takes from you, take from it.”";
+    dialogueText.text = "Atleta the Senior laughed haughtily. “Yes, yes I did. A lot. But that’s not the important part, that’s just something we all must do from time to time.” She reached over to the ornate spear, covered in carved symbols; she held it as if it was a natural extension of her arm.\n\n“I hunted. I scoured the waters around this island ‘till I found the beast and fought it for three days and three nights, only to awake bleeding on this very shore. Two years later, with a new ship and this very spear, I found it again. Who knows how many days and nights that was. But it ended this time with the beast bleeding on the beach, not I. I took its bones and used them to build this house, and now here I am.” The old woman leaned in:\n\n“If the sea takes from you, take from it.”";
 
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (false);
@@ -519,7 +519,7 @@ public class dialogue : MonoBehaviour {
 
   public void B2C() {
 		PlayPageSound ();
-    dialogueText.text = "Atleta the Senior nodded. “Yes, that is what I did.” She reached over to the ornate spear, covered in carved symbols; she held it as if it was a natural extension of her arm. \n\n“I hunted. I scoured the waters around this island ‘till I found the beast and fought it for three days and three nights, only to awake bleeding on this very shore. Two years later, with a new ship and this very spear, I found it again. Who knows how many days and nights that was. But it ended this time with the beast bleeding on the beach, not I. I took its bones and used them to build this house, and now here I am.” The old woman leaned in:\n\n“If the sea takes from you, take from it.”";
+    dialogueText.text = "Atleta the Senior nodded. “Yes, that is what I did.” She reached over to the ornate spear, covered in carved symbols; she held it as if it was a natural extension of her arm.\n\n“I hunted. I scoured the waters around this island ‘till I found the beast and fought it for three days and three nights, only to awake bleeding on this very shore. Two years later, with a new ship and this very spear, I found it again. Who knows how many days and nights that was. But it ended this time with the beast bleeding on the beach, not I. I took its bones and used them to build this house, and now here I am.” The old woman leaned in:\n\n“If the sea takes from you, take from it.”";
 
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (false);
@@ -540,7 +540,7 @@ public class dialogue : MonoBehaviour {
 
   public void B3() {
 		PlayPageSound ();
-    dialogueText.text = "Atleta nodded, but could think of nothing to say. The candles flickered and cast strange shadows on the walls. Atleta the Senior yawned. “It’s quite a tale, living. Stay here tonight, child, and leave tomorrow when the birds begin to make a racket -- that’s when the wind is most favorable.\n\n“And this is most important: when you get home, tell your family you love them. That is very important; that is my second lesson to impart. Don’t let the sea take from you at all, if it can be helped.” She nodded, satisfied, then fetched a blanket for Atleta. \n\nThe next morning the birds began to make noise not soon after dawn; Atleta the Senior was nowhere to be seen.";
+    dialogueText.text = "Atleta nodded, but could think of nothing to say. The candles flickered and cast strange shadows on the walls. Atleta the Senior yawned. “It’s quite a tale, living. Stay here tonight, child, and leave tomorrow when the birds begin to make a racket -- that’s when the wind is most favorable.\n\n“And this is most important: when you get home, tell your family you love them. That is very important; that is my second lesson to impart. Don’t let the sea take from you at all, if it can be helped.” She nodded, satisfied, then fetched a blanket for Atleta.\n\nThe next morning the birds began to make noise not soon after dawn; Atleta the Senior was nowhere to be seen.";
 
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (false);
@@ -560,7 +560,7 @@ public class dialogue : MonoBehaviour {
   }
 
 	public void R1() {
-		dialogueText.text = "The port of An Tara, home, could not have been a more welcome sign for Atleta, and as she tied her boat up at the familiar dock her family came to her side and held her close, and she held them back. “I love you”, she told her mother and father. “You’re one of us now, my dear Atleta.” \n";
+		dialogueText.text = "The port of An Tara, home, could not have been a more welcome sign for Atleta, and as she tied her boat up at the familiar dock her family came to her side and held her close, and she held them back. “I love you”, she told her mother and father. “You’re one of us now, my dear Atleta.”";
 
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (false);
