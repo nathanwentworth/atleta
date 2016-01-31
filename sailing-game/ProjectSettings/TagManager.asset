@@ -13,6 +13,7 @@ TagManager:
   - terrain
   - HillAz
   - SnowAZ
+  - StartAZ
   layers:
   - Default
   - TransparentFX

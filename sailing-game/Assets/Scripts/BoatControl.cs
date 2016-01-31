@@ -98,7 +98,7 @@ public class BoatControl : MonoBehaviour {
 	}
 
 	private void BoatFast(){
-		boatSpeed = Mathf.Lerp (boatSpeed, -1, Time.deltaTime);
+		boatSpeed = Mathf.Lerp (boatSpeed, -5, Time.deltaTime);
 		boatRigid.velocity = transform.up * boatSpeed;
 	}
 		
