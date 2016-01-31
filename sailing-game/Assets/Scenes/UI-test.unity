@@ -1066,7 +1066,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 404908, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.53
+      value: -8.58
       objectReference: {fileID: 0}
     - target: {fileID: 404908, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1100,9 +1100,9 @@ Prefab:
       propertyPath: m_Name
       value: trigger-1
       objectReference: {fileID: 0}
-    - target: {fileID: 170532, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
-      propertyPath: m_TagString
-      value: trigger-1
+    - target: {fileID: 5811142, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
+      propertyPath: m_UsedByEffector
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
@@ -1510,75 +1510,151 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 233.75
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -59.96863
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 447.5
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 99.93726
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 233.75
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -164.9059
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 447.5
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 99.93726
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 233.75
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -269.84317
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 447.5
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 99.93726
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476966, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_Text
+      value: "On the morning of her 16th birthday, Atleta woke to the familiar sounds
+        of her village, An Tara, and the sea that it belonged to. Her mother beamed
+        with pride and her father watched Atleta drive the last nails into the hull
+        of her very own boat. The village gathered on the coarse shore and listened
+        to her father\u2019s booming voice:\\n\\n\u201CAtleta, my beautiful daughter,
+        you are on this day 16 summers on land; from this moment henceforth you are
+        of the sea. To become one of us, you must visit our neighbors to the WEST,
+        NORTH, and EAST, and complete the rituals their leaders give you, then fly
+        the flag of their island on your boat.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476966, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 48270f9b64d0d473789f842d4a07d1be,
+        type: 3}
+    - target: {fileID: 11476966, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476966, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_MaxSize
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 11427022, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 48270f9b64d0d473789f842d4a07d1be,
+        type: 3}
+    - target: {fileID: 11420602, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 48270f9b64d0d473789f842d4a07d1be,
+        type: 3}
+    - target: {fileID: 11475580, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 48270f9b64d0d473789f842d4a07d1be,
+        type: 3}
+    - target: {fileID: 11427022, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 11420602, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475580, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 11427022, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_MaxSize
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 11420602, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_MaxSize
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475580, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_MaxSize
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475580, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_Text
+      value: "She walked to the wake\u2019s edge and threw it into the waves."
+      objectReference: {fileID: 0}
+    - target: {fileID: 11420602, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_Text
+      value: "\u201CI may or may not have gotten lost a couple times.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11427022, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_Text
+      value: "\u201CThe sea\u2019s been kind, thank goodness.\u201D"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c609561447ab643e0b85525d25798766, type: 2}
