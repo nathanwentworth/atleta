@@ -4,7 +4,6 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class dialogue : MonoBehaviour {
-  private int splitNum;
 
 	public GameObject book;
 
@@ -44,17 +43,7 @@ public class dialogue : MonoBehaviour {
 
     S1();
   }
-
-  void OnTriggerEnter(Collider target) {
-    if(target.tag == "dialoguetrigger") {
-      switch(splitNum) {
-        case 1:
-        break;
-      }
-
-    }
-  }
-
+		
   public void S1() {  
     dialogueText.text = "On the morning of her 16th birthday, Atleta woke to the familiar sounds of her village, An Tara, and the sea that it belonged to. Her mother beamed with pride and her father watched Atleta drive the last nails into the hull of her very own boat. The village gathered on the coarse shore and listened to her father’s booming voice: \n\n“Atleta, my beautiful daughter, you are on this day 16 summers on land; from this moment henceforth you are of the sea. To become one of us, you must visit our neighbors to the WEST, NORTH, and EAST, and complete the rituals their leaders give you, then fly the flag of their island on your boat.”";
 	
@@ -316,8 +305,8 @@ public class dialogue : MonoBehaviour {
     ans2.onClick.AddListener(V4B);
     // ans3.onClick.AddListener(Script1A);
 
-    ans1text.text = "Atleta stopped eating…";
-    ans2text.text = "Atleta kept eating… ";
+		ans1text.text = "Atleta kept eating… ";
+		ans2text.text = "Atleta stopped eating… ";
     // ans3text.text = "Lorem3";
   }
   public void V4A() {

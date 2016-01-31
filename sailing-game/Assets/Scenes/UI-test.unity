@@ -644,6 +644,10 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!1 &966609779 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 173238, guid: 2f5f08a9ce738ab40a2c9431367a9442, type: 2}
+  m_PrefabInternal: {fileID: 1136621954}
 --- !u!1 &972865636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,6 +1521,7 @@ MonoBehaviour:
   dialogue: {fileID: 1987686194}
   fadeCanvasGroup: {fileID: 6936883}
   speed: 1
+  trigger4: {fileID: 966609779}
 --- !u!1 &1929909086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1720,75 +1725,75 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 233.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -60.000793
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 447.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100.00159
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 233.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -165.00238
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 447.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100.00159
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 233.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -270.00397
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 447.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100.00159
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11476966, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_Text
