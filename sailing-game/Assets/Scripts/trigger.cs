@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class trigger : MonoBehaviour {
 
@@ -40,6 +41,20 @@ public class trigger : MonoBehaviour {
 
 	public CanvasGroup fadeCanvasGroup;
 
+	//AudioBooleans + Snapshots
+	private bool VanmarTrue = false;
+	private bool BornaisTrue = false;
+	private bool Kikjar_AnTaraTrue = true;
+	[Header("Audio Snapshots")]
+	public AudioMixerSnapshot DEFAULT;
+	public AudioMixerSnapshot VanMar;
+	public AudioMixerSnapshot Bornais;
+	public AudioSource VanmarMusicAS;
+	public AudioSource VanmarAmbienceAS;
+	public AudioSource DefaultAmbienceAS;
+	public AudioSource AnTaraAS;
+	public AudioSource BornaiaAS;
+
 	[SerializeField]
 	private float speed;
 
@@ -57,6 +72,9 @@ public class trigger : MonoBehaviour {
 		startEndTimer = false;
 		isPaused = false;
 		canIPause = false;
+		DEFAULT.TransitionTo (2f);
+		DefaultAmbienceAS.Play ();
+		AnTaraAS.Play ();
 	}
 
 	void Update() {
@@ -72,6 +90,24 @@ public class trigger : MonoBehaviour {
 				pauseText.SetActive (false);
 				isPaused = false;
 			}
+		}
+		if (VanmarTrue) {
+			VanMar.TransitionTo (5f);
+			VanmarMusicAS.Play ();
+			VanmarAmbienceAS.Play ();
+			Kikjar_AnTaraTrue = false;
+			VanmarTrue = false;
+
+		}
+		if (BornaisTrue) {
+			Bornais.TransitionTo (5f);
+			BornaiaAS.Play ();
+			Kikjar_AnTaraTrue = false;
+			BornaisTrue = false;
+		}
+
+		if (Kikjar_AnTaraTrue) {
+			DEFAULT.TransitionTo (5f);
 		}
 		if (startTimer) {
 			alphaTimer += Time.deltaTime;
@@ -182,7 +218,36 @@ public class trigger : MonoBehaviour {
 			dialogue.R1();
 			target.gameObject.SetActive (false);
 		}
+		if (target.gameObject.tag == "SnowAZ") {
+			VanmarTrue = true;
+			Kikjar_AnTaraTrue = false;
+			BornaisTrue = false;
+		}
+		if (target.gameObject.tag == "HillAz") {
+			BornaisTrue = true;
+			Kikjar_AnTaraTrue = false;
+			VanmarTrue = false;
+		}
+		if (target.gameObject.tag == "StartAZ") {
+			Kikjar_AnTaraTrue = true;
+			BornaisTrue = false;
+			VanmarTrue = false;
+		}
 	}
+
+	/*void OnTriggerExit2D(Collider2D collison){
+		if (collison.gameObject.tag == "SnowAZ") {
+			Kikjar_AnTaraTrue = true;
+			VanmarTrue = false;
+			BornaisTrue = false;
+		}
+		if (collison.gameObject.tag == "HillAz") {
+			Kikjar_AnTaraTrue = true;
+			VanmarTrue = false;
+			BornaisTrue = false;
+	}
+	}*/
+	
 	public void ClosePanel() {
 		ans1.onClick.RemoveAllListeners();
 		textDisp = false;

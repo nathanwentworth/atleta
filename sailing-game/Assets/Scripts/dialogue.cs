@@ -92,7 +92,7 @@ public class dialogue : MonoBehaviour {
 		//ans2.onClick.AddListener(Keyboard);
 		// ans3.onClick.AddListener(Script1A);
 
-		ans1text.text = "Begin your ritual...";
+		ans1text.text = "On the morning of her 16th birthday, Atleta...";
 	}
 
 	public void Keyboard(){
@@ -111,7 +111,7 @@ public class dialogue : MonoBehaviour {
 		//ans2.onClick.AddListener(Keyboard);
 		// ans3.onClick.AddListener(Script1A);
 
-		ans1text.text = "Begin your ritual...";
+		ans1text.text = "On the morning of her 16th birthday, Atleta...";
 	}
 		
   public void S1() {  
