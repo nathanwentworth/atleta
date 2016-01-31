@@ -13,6 +13,8 @@ public class trigger : MonoBehaviour {
 	public Sprite flag2;
 	public Sprite flag3;
 
+	public AudioSource BoatSmash;
+
 	public BoatControl BoatControl;
 	public dialogue dialogue;
 
@@ -100,6 +102,12 @@ public class trigger : MonoBehaviour {
 	public void GameStart() {
 		startTimer = true;
 		// dialogue.S1();
+	}
+
+	void OnCollisionEnter2D(Collision2D collide){
+		if (collide.gameObject.tag == "terrain") {
+			BoatSmash.Play ();
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D target) {

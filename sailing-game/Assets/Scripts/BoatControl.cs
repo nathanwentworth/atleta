@@ -6,11 +6,15 @@ public class BoatControl : MonoBehaviour {
 	//SERIALZED FIELD VARIABLES
 	public int boatSpeedSet;
 	public bool inputEnabled;
+	public AudioSource slow;
+	public AudioSource fast;
 
 	//DECLARING PRIVATE VARIABLES
 	private Rigidbody2D boatRigid;
 	private float boatSpeed;
 	private TrailRenderer trail;
+	private int oldBoatSpeedSet;
+	private bool playSailSound;
 
 	void Start () {
 
@@ -19,6 +23,7 @@ public class BoatControl : MonoBehaviour {
 		trail = this.GetComponent<TrailRenderer> ();
 		boatSpeed = 0;
 		boatSpeedSet = 0;
+		oldBoatSpeedSet = 0;
 		inputEnabled = true;
 	}
 
@@ -37,12 +42,27 @@ public class BoatControl : MonoBehaviour {
 			//BOAT SPEED SET INPUT
 			if (Input.GetButton ("X")) {
 				boatSpeedSet = 0;
+				playSailSound = true;
 			}
 			if (Input.GetButton ("Y")) {
 				boatSpeedSet = 1;
+				playSailSound = true;
 			}
 			if (Input.GetButton ("B")) {
 				boatSpeedSet = 2;
+				playSailSound = true;
+			}
+		}
+
+		if (playSailSound) {
+			if (oldBoatSpeedSet < boatSpeedSet) {
+				fast.Play ();
+				oldBoatSpeedSet = boatSpeedSet;
+				playSailSound = false;
+			} else if (oldBoatSpeedSet > boatSpeedSet) {
+				slow.Play ();
+				oldBoatSpeedSet = boatSpeedSet;
+				playSailSound = false;
 			}
 		}
 			
@@ -78,7 +98,7 @@ public class BoatControl : MonoBehaviour {
 	}
 
 	private void BoatFast(){
-		boatSpeed = Mathf.Lerp (boatSpeed, -5, Time.deltaTime);
+		boatSpeed = Mathf.Lerp (boatSpeed, -1, Time.deltaTime);
 		boatRigid.velocity = transform.up * boatSpeed;
 	}
 		
