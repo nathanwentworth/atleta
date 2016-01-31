@@ -7,6 +7,10 @@ public class trigger : MonoBehaviour {
 	public GameObject book;
 	public GameObject mainMenu;
 
+	public Sprite flag1;
+	public Sprite flag2;
+	public Sprite flag3;
+
 	public BoatControl BoatControl;
 	public dialogue dialogue;
 
@@ -27,7 +31,7 @@ public class trigger : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		activateT4 = 0;
+		activateT4 = -1;
 		BoatControl.inputEnabled = false;
 		BoatControl.boatSpeedSet = 0;
 	}
@@ -47,7 +51,18 @@ public class trigger : MonoBehaviour {
 
 		if (activateT4 == 3) {
 			trigger4.SetActive(true);
-			activateT4 = 0;
+		}
+
+		switch (activateT4) {
+		case 1:
+			GetComponent<SpriteRenderer> ().sprite = flag1;
+			break;
+		case 2:
+			GetComponent<SpriteRenderer> ().sprite = flag2;
+			break;
+		case 3:
+			GetComponent<SpriteRenderer> ().sprite = flag3;
+			break;
 		}
 	}
 
@@ -58,7 +73,6 @@ public class trigger : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D target) {
 		if (target.gameObject.tag == "trigger-1") {
-			activateT4++;
 			BoatControl.inputEnabled = false;
 			BoatControl.boatSpeedSet = 0;
 			book.SetActive(true);
@@ -70,7 +84,6 @@ public class trigger : MonoBehaviour {
 			Destroy(target.gameObject);
 		}
 		if (target.gameObject.tag == "trigger-2") {
-			activateT4++;
 			BoatControl.inputEnabled = false;
 			BoatControl.boatSpeedSet = 0;
 			book.SetActive(true);
@@ -81,7 +94,6 @@ public class trigger : MonoBehaviour {
 			Destroy(target.gameObject);
 		}
 		if (target.gameObject.tag == "trigger-3") {
-			activateT4++;
 			BoatControl.inputEnabled = false;
 			BoatControl.boatSpeedSet = 0;
 			book.SetActive(true);
@@ -108,5 +120,6 @@ public class trigger : MonoBehaviour {
 		canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
 		BoatControl.inputEnabled = true;
 		BoatControl.boatSpeedSet = 0;
+		activateT4++;
 	}
 }
