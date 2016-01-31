@@ -35,13 +35,13 @@ public class BoatControl : MonoBehaviour {
 			}
 
 			//BOAT SPEED SET INPUT
-			if (Input.GetKeyDown (KeyCode.Alpha1)) {
+			if (Input.GetButton ("X")) {
 				boatSpeedSet = 0;
 			}
-			if (Input.GetKeyDown (KeyCode.Alpha2)) {
+			if (Input.GetButton ("Y")) {
 				boatSpeedSet = 1;
 			}
-			if (Input.GetKeyDown (KeyCode.Alpha3)) {
+			if (Input.GetButton ("B")) {
 				boatSpeedSet = 2;
 			}
 		}
