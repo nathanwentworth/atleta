@@ -10,6 +10,7 @@ TagManager:
   - trigger-4
   - WhirlpoolStart
   - WhirlpoolEnd
+  - terrain
   layers:
   - Default
   - TransparentFX
