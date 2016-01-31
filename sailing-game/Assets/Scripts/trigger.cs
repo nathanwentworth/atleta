@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class trigger : MonoBehaviour {
 
@@ -25,6 +26,8 @@ public class trigger : MonoBehaviour {
 	private float endTimer;
 	private bool startEndTimer;
 	private bool spawnTrigger4;
+
+	public GameObject ans1obj;
 
 	private Vector2 initialPos;
 
@@ -55,6 +58,7 @@ public class trigger : MonoBehaviour {
 		if (alphaTimer >= 2) {
 			textDisp = true;
 			canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
+			EventSystem.current.SetSelectedGameObject(ans1obj, null);
 			mainMenu.SetActive(false);
 			startTimer = false;
 			alphaTimer = 0;

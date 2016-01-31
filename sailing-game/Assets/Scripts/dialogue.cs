@@ -66,6 +66,7 @@ public class dialogue : MonoBehaviour {
 		ans2.onClick.RemoveAllListeners();
 		ans3.onClick.RemoveAllListeners();
 
+
 		ans1.onClick.AddListener(Xbox);
 		ans2.onClick.AddListener(Keyboard);
 		// ans3.onClick.AddListener(Script1A);
