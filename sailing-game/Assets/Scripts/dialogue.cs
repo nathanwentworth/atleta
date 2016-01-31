@@ -62,7 +62,7 @@ public class dialogue : MonoBehaviour {
 		ans2obj.SetActive (false);
 		ans3obj.SetActive (false);
 
-		EventSystem.current.SetSelectedGameObject(ans1obj, null);
+		// EventSystem.current.SetSelectedGameObject(ans1obj, null);
 
     ans1.onClick.RemoveAllListeners();
     ans2.onClick.RemoveAllListeners();

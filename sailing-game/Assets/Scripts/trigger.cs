@@ -34,15 +34,15 @@ public class trigger : MonoBehaviour {
 		if (alphaTimer >= 2) {
 			textDisp = true;
 			canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
-			dialogue.S1();
-			BoatControl.inputEnabled = true;
 			mainMenu.SetActive(false);
 			startTimer = false;
+			alphaTimer = 0;
 		}
 	}
 
 	public void GameStart() {
 		startTimer = true;
+		// dialogue.S1();
 	}
 
 	void OnTriggerEnter2D(Collider2D target) {
@@ -82,6 +82,7 @@ public class trigger : MonoBehaviour {
 		}
 	}
 	public void ClosePanel() {
+		Debug.Log("cool");
 		textDisp = false;
 		canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
 		BoatControl.inputEnabled = true;
