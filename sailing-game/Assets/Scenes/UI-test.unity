@@ -2530,9 +2530,27 @@ Prefab:
       propertyPath: m_PixelPerfect
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 11446798, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_ReferencePixelsPerUnit
       value: 100
+=======
+    - target: {fileID: 11476966, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476966, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_MinSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476966, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_FontData.m_MaxSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 162346, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+>>>>>>> master
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c609561447ab643e0b85525d25798766, type: 2}
