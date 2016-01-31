@@ -11,6 +11,8 @@ TagManager:
   - WhirlpoolStart
   - WhirlpoolEnd
   - terrain
+  - HillAz
+  - SnowAZ
   layers:
   - Default
   - TransparentFX
