@@ -78,7 +78,7 @@ public class dialogue : MonoBehaviour {
 
 	public void Xbox(){
 		PlayPageSound ();
-		dialogueText.text = "Controls: \n\nX - Stop Boat\nY - Half Speed\nB - Full Speed\nLeft and Right Bumpers - Turn Boat Clockwise and Counter-Clockwise\nA - Confirm";
+		dialogueText.text = "Controls: \n\nX - Stop Boat\nY - Half Speed\nB - Full Speed\nLeft and Right Bumpers - Turn Boat Clockwise and Counter-Clockwise\nA - Confirm\nStart - Pause";
 
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (false);
@@ -97,7 +97,7 @@ public class dialogue : MonoBehaviour {
 
 	public void Keyboard(){
 		PlayPageSound ();
-		dialogueText.text = "Controls: \n\n1 - Stop Boat\n2 - Half Speed\n3 - Full Speed\nA and D - Turn Boat Clockwise and Counter-Clockwise\nLeft Click - Confirm";
+		dialogueText.text = "Controls: \n\n1 - Stop Boat\n2 - Half Speed\n3 - Full Speed\nA and D - Turn Boat Clockwise and Counter-Clockwise\nLeft Click - Confirm\nEscape - Pause";
 
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (false);
