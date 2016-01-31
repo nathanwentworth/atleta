@@ -471,4 +471,24 @@ public class dialogue : MonoBehaviour {
     // ans3text.text = "Lorem3";
   }
 
+	public void R1() {
+		dialogueText.text = "The port of An Tara, home, could not have been a more welcome sign for Atleta, and as she tied her boat up at the familiar dock her family came to her side and held her close, and she held them back. “I love you”, she told her mother and father. “You’re one of us now, my dear Atleta.” \n";
+
+		ans1obj.SetActive (true);
+		ans2obj.SetActive (false);
+		ans3obj.SetActive (false);
+
+		ans1.onClick.RemoveAllListeners();
+		ans2.onClick.RemoveAllListeners();
+		ans3.onClick.RemoveAllListeners();
+
+		ans1.onClick.AddListener(trigger.EndGame);
+		// ans2.onClick.AddListener(Script1B);
+		// ans3.onClick.AddListener(Script1A);
+
+		ans1text.text = "The End!";
+		// ans2text.text = "Lorem1B";
+		// ans3text.text = "Lorem3";
+	}
+
 }
