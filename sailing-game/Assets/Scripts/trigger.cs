@@ -11,6 +11,7 @@ public class trigger : MonoBehaviour {
 	public GameObject mainMenu;
 
 	public GameObject pauseText;
+	public GameObject map;
 	public Button ans1;
 
 	public Sprite flag0;
@@ -27,6 +28,8 @@ public class trigger : MonoBehaviour {
 	private bool startTimer;
 
 	private bool canIPause;
+	private bool canMap = true;
+	private bool isMap = false;
 
 	public int activateT4;
 	private float endTimer;
@@ -57,20 +60,36 @@ public class trigger : MonoBehaviour {
 		startEndTimer = false;
 		isPaused = false;
 		canIPause = false;
+		canMap = false;
 	}
 
 	void Update() {
 		if (Input.GetButtonDown("Start") && canIPause) {
-			print ("what");
 			if (!isPaused) {
 				Time.timeScale = 0.0f;
 				pauseText.SetActive (true);
 				isPaused = true;
+				canMap = false;
 			}
 			else {
 				Time.timeScale = 1.0f;
 				pauseText.SetActive (false);
 				isPaused = false;
+				canMap = true;
+			}
+		}
+		if (Input.GetButtonDown("Select") && canMap) {
+			if (!isMap) {
+				Time.timeScale = 0.0f;
+				map.SetActive(true);
+				isMap = true;
+				canIPause = false;
+			}
+			else {
+				Time.timeScale = 1.0f;
+				map.SetActive(false);
+				isMap = false;
+				canIPause = true;
 			}
 		}
 		if (startTimer) {
@@ -189,6 +208,7 @@ public class trigger : MonoBehaviour {
 		canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
 		BoatControl.inputEnabled = true;
 		canIPause = true;
+		canMap = true;
 		BoatControl.boatSpeedSet = 0;
 		activateT4++;
 	}
