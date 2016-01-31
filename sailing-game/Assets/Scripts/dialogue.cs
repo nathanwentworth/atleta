@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class dialogue : MonoBehaviour {
   private int splitNum;
@@ -60,6 +61,8 @@ public class dialogue : MonoBehaviour {
 		ans1obj.SetActive (true);
 		ans2obj.SetActive (false);
 		ans3obj.SetActive (false);
+
+		EventSystem.current.SetSelectedGameObject(ans1obj, null);
 
     ans1.onClick.RemoveAllListeners();
     ans2.onClick.RemoveAllListeners();
