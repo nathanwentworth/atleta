@@ -90,6 +90,8 @@ public class dialogue : MonoBehaviour {
 
 		ans1.onClick.AddListener(trigger.ClosePanel);
 
+		trigger.islandCount++;
+
     // ans1.onClick.AddListener(Script2A);
     // ans2.onClick.AddListener(Script2B);
     // ans3.onClick.AddListener(Script1A);
@@ -214,6 +216,8 @@ public class dialogue : MonoBehaviour {
 
 		ans1.onClick.AddListener(trigger.ClosePanel);
 
+		trigger.islandCount++;
+
     ans1text.text = "Set Sail!";
     // ans2text.text = "Lorem1B";
     // ans3text.text = "Lorem3";
@@ -231,6 +235,8 @@ public class dialogue : MonoBehaviour {
     ans3.onClick.RemoveAllListeners();
 
 		ans1.onClick.AddListener(trigger.ClosePanel);
+
+		trigger.islandCount++;
 
     // ans1.onClick.AddListener(K2);
     // ans2.onClick.AddListener(Script1B);
@@ -333,6 +339,8 @@ public class dialogue : MonoBehaviour {
 
 		ans1.onClick.AddListener(trigger.ClosePanel);
 
+		trigger.islandCount++;
+
     // ans1.onClick.AddListener(K2);
     // ans2.onClick.AddListener(Script1B);
     // ans3.onClick.AddListener(Script1A);
@@ -353,6 +361,8 @@ public class dialogue : MonoBehaviour {
     ans3.onClick.RemoveAllListeners();
 
 		ans1.onClick.AddListener(trigger.ClosePanel);
+
+		trigger.islandCount++;
 
     // ans1.onClick.AddListener(K2);
     // ans2.onClick.AddListener(Script1B);
@@ -474,6 +484,8 @@ public class dialogue : MonoBehaviour {
     ans3.onClick.RemoveAllListeners();
 
     ans1.onClick.AddListener(trigger.ClosePanel);
+
+    trigger.islandCount++;
     // ans2.onClick.AddListener(Script1B);
     // ans3.onClick.AddListener(Script1A);
 

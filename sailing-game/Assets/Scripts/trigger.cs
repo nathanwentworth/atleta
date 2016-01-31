@@ -6,9 +6,12 @@ public class trigger : MonoBehaviour {
 	public GameObject canvas;
 	public GameObject book;
 	public GameObject mainMenu;
+	public GameObject trigger4;
 
 	public BoatControl BoatControl;
 	public dialogue dialogue;
+
+	private int islandCount = 0;
 
 	private float alphaTimer;
 	private bool startTimer;
@@ -38,6 +41,9 @@ public class trigger : MonoBehaviour {
 			startTimer = false;
 			alphaTimer = 0;
 		}
+		if (islandCount == 3) {
+			trigger4.SetActive(true);
+		}
 	}
 
 	public void GameStart() {
@@ -63,7 +69,7 @@ public class trigger : MonoBehaviour {
 			book.SetActive(true);
 			Debug.Log("trigger 2 activated");
 			canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
-			dialogue.K1();
+			dialogue.V1();
 			Destroy(target);
 		}
 		if (target.gameObject.tag == "trigger-3") {
@@ -72,7 +78,7 @@ public class trigger : MonoBehaviour {
 			book.SetActive(true);
 			Debug.Log("trigger 3 activated");
 			canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
-			dialogue.K1();
+			dialogue.B1();
 			Destroy(target);
 		}
 		if (target.gameObject.tag == "trigger-4") {
@@ -81,7 +87,7 @@ public class trigger : MonoBehaviour {
 			book.SetActive(true);
 			Debug.Log("trigger 4 activated");
 			canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
-			dialogue.K1();
+			dialogue.R1();
 			Destroy(target);
 		}
 	}
