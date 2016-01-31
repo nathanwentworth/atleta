@@ -2,12 +2,16 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class trigger : MonoBehaviour {
 
 	public GameObject canvas;
 	public GameObject book;
 	public GameObject mainMenu;
+
+	public GameObject pauseText;
+	public Button ans1;
 
 	public Sprite flag0;
 	public Sprite flag1;
@@ -22,10 +26,13 @@ public class trigger : MonoBehaviour {
 	private float alphaTimer;
 	private bool startTimer;
 
+	private bool canIPause;
+
 	public int activateT4;
 	private float endTimer;
 	private bool startEndTimer;
 	private bool spawnTrigger4;
+	private bool isPaused;
 
 	public GameObject ans1obj;
 
@@ -48,9 +55,24 @@ public class trigger : MonoBehaviour {
 		BoatControl.inputEnabled = false;
 		BoatControl.boatSpeedSet = 0;
 		startEndTimer = false;
+		isPaused = false;
+		canIPause = false;
 	}
 
 	void Update() {
+		if (Input.GetButtonDown("Start") && canIPause) {
+			print ("what");
+			if (!isPaused) {
+				Time.timeScale = 0.0f;
+				pauseText.SetActive (true);
+				isPaused = true;
+			}
+			else {
+				Time.timeScale = 1.0f;
+				pauseText.SetActive (false);
+				isPaused = false;
+			}
+		}
 		if (startTimer) {
 			alphaTimer += Time.deltaTime;
 	    	fadeCanvasGroup.alpha -= speed * Time.deltaTime;
@@ -116,6 +138,7 @@ public class trigger : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D target) {
 		if (target.gameObject.tag == "trigger-1") {
+			canIPause = false;
 			BoatControl.inputEnabled = false;
 			BoatControl.boatSpeedSet = 0;
 			book.SetActive(true);
@@ -127,6 +150,7 @@ public class trigger : MonoBehaviour {
 			target.gameObject.SetActive (false);
 		}
 		if (target.gameObject.tag == "trigger-2") {
+			canIPause = false;
 			BoatControl.inputEnabled = false;
 			BoatControl.boatSpeedSet = 0;
 			book.SetActive(true);
@@ -137,6 +161,7 @@ public class trigger : MonoBehaviour {
 			target.gameObject.SetActive (false);
 		}
 		if (target.gameObject.tag == "trigger-3") {
+			canIPause = false;
 			BoatControl.inputEnabled = false;
 			BoatControl.boatSpeedSet = 0;
 			book.SetActive(true);
@@ -147,6 +172,7 @@ public class trigger : MonoBehaviour {
 			target.gameObject.SetActive (false);
 		}
 		if (target.gameObject.tag == "trigger-4") {
+			canIPause = false;
 			BoatControl.inputEnabled = false;
 			BoatControl.boatSpeedSet = 0;
 			book.SetActive(true);
@@ -158,9 +184,11 @@ public class trigger : MonoBehaviour {
 		}
 	}
 	public void ClosePanel() {
+		ans1.onClick.RemoveAllListeners();
 		textDisp = false;
 		canvas.GetComponent<Animator>().SetBool("textDisplay", textDisp);
 		BoatControl.inputEnabled = true;
+		canIPause = true;
 		BoatControl.boatSpeedSet = 0;
 		activateT4++;
 	}
