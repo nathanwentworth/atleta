@@ -161,6 +161,92 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+<<<<<<< HEAD:sailing-game/Assets/Scenes/WorldBuild.unity
+--- !u!1001 &151767631
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 447242, guid: 2f5f08a9ce738ab40a2c9431367a9442, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -79.53268
+      objectReference: {fileID: 0}
+    - target: {fileID: 447242, guid: 2f5f08a9ce738ab40a2c9431367a9442, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 23.70009
+      objectReference: {fileID: 0}
+    - target: {fileID: 447242, guid: 2f5f08a9ce738ab40a2c9431367a9442, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447242, guid: 2f5f08a9ce738ab40a2c9431367a9442, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447242, guid: 2f5f08a9ce738ab40a2c9431367a9442, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447242, guid: 2f5f08a9ce738ab40a2c9431367a9442, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447242, guid: 2f5f08a9ce738ab40a2c9431367a9442, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 447242, guid: 2f5f08a9ce738ab40a2c9431367a9442, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2f5f08a9ce738ab40a2c9431367a9442, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &819359395
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 448302, guid: b9ca4631ae2e9af40a68af95c3631086, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -38.975815
+      objectReference: {fileID: 0}
+    - target: {fileID: 448302, guid: b9ca4631ae2e9af40a68af95c3631086, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -13.677213
+      objectReference: {fileID: 0}
+    - target: {fileID: 448302, guid: b9ca4631ae2e9af40a68af95c3631086, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 448302, guid: b9ca4631ae2e9af40a68af95c3631086, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 448302, guid: b9ca4631ae2e9af40a68af95c3631086, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 448302, guid: b9ca4631ae2e9af40a68af95c3631086, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 448302, guid: b9ca4631ae2e9af40a68af95c3631086, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 448302, guid: b9ca4631ae2e9af40a68af95c3631086, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b9ca4631ae2e9af40a68af95c3631086, type: 2}
+  m_IsPrefabParent: 0
+=======
 --- !u!1 &435557615
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,6 +934,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+>>>>>>> master:sailing-game/Assets/Scenes/UI-test.unity
 --- !u!1 &1028245786 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 184352, guid: c609561447ab643e0b85525d25798766, type: 2}
@@ -934,7 +1021,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1246402250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: -10}
+  m_LocalPosition: {x: -1.28, y: -0.08, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -955,6 +1042,9 @@ MonoBehaviour:
   lookAheadFactor: 0
   lookAheadReturnSpeed: 0
   lookAheadMoveThreshold: 0
+<<<<<<< HEAD:sailing-game/Assets/Scenes/WorldBuild.unity
+--- !u!1001 &1263686068
+=======
 --- !u!1 &1325951377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,42 +1148,50 @@ Transform:
   m_Father: {fileID: 2058020893}
   m_RootOrder: 0
 --- !u!1001 &1502029719
+>>>>>>> master:sailing-game/Assets/Scenes/UI-test.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 404908, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
+    - target: {fileID: 414398, guid: b1daa920c9ccbc3468ace8f7a2ffa795, type: 2}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD:sailing-game/Assets/Scenes/WorldBuild.unity
+      value: 9.3
+=======
       value: -8.58
+>>>>>>> master:sailing-game/Assets/Scenes/UI-test.unity
       objectReference: {fileID: 0}
-    - target: {fileID: 404908, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
+    - target: {fileID: 414398, guid: b1daa920c9ccbc3468ace8f7a2ffa795, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.59
+      value: -14.5
       objectReference: {fileID: 0}
-    - target: {fileID: 404908, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
+    - target: {fileID: 414398, guid: b1daa920c9ccbc3468ace8f7a2ffa795, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 404908, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
+    - target: {fileID: 414398, guid: b1daa920c9ccbc3468ace8f7a2ffa795, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 404908, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
+    - target: {fileID: 414398, guid: b1daa920c9ccbc3468ace8f7a2ffa795, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 404908, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
+    - target: {fileID: 414398, guid: b1daa920c9ccbc3468ace8f7a2ffa795, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 404908, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
+    - target: {fileID: 414398, guid: b1daa920c9ccbc3468ace8f7a2ffa795, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 404908, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
+    - target: {fileID: 414398, guid: b1daa920c9ccbc3468ace8f7a2ffa795, type: 2}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:sailing-game/Assets/Scenes/WorldBuild.unity
+      value: 5
+=======
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 170532, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
@@ -1103,9 +1201,10 @@ Prefab:
     - target: {fileID: 5811142, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
       propertyPath: m_UsedByEffector
       value: 0
+>>>>>>> master:sailing-game/Assets/Scenes/UI-test.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 322115c9e2c7e4e64b58ce2b98592a7d, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: b1daa920c9ccbc3468ace8f7a2ffa795, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1725021203
 GameObject:
@@ -1222,13 +1321,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1787222680}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0.11, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071067}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5.132531, y: 6.391609, z: 1}
   m_Children:
   - {fileID: 1725021204}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!114 &1787222685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1522,7 +1621,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.y
+<<<<<<< HEAD:sailing-game/Assets/Scenes/WorldBuild.unity
+      value: -60.000793
+=======
       value: -59.957806
+>>>>>>> master:sailing-game/Assets/Scenes/UI-test.unity
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1530,7 +1633,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22487460, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.y
+<<<<<<< HEAD:sailing-game/Assets/Scenes/WorldBuild.unity
+      value: 100.00159
+=======
       value: 99.91561
+>>>>>>> master:sailing-game/Assets/Scenes/UI-test.unity
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMin.y
@@ -1546,7 +1653,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.y
+<<<<<<< HEAD:sailing-game/Assets/Scenes/WorldBuild.unity
+      value: -165.00238
+=======
       value: -164.87341
+>>>>>>> master:sailing-game/Assets/Scenes/UI-test.unity
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1554,7 +1665,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22446832, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.y
+<<<<<<< HEAD:sailing-game/Assets/Scenes/WorldBuild.unity
+      value: 100.00159
+=======
       value: 99.91561
+>>>>>>> master:sailing-game/Assets/Scenes/UI-test.unity
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchorMin.y
@@ -1570,7 +1685,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_AnchoredPosition.y
+<<<<<<< HEAD:sailing-game/Assets/Scenes/WorldBuild.unity
+      value: -270.00397
+=======
       value: -269.78903
+>>>>>>> master:sailing-game/Assets/Scenes/UI-test.unity
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1578,6 +1697,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22447160, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.y
+<<<<<<< HEAD:sailing-game/Assets/Scenes/WorldBuild.unity
+      value: 100.00159
+      objectReference: {fileID: 0}
+    - target: {fileID: 162346, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22478260, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -116
+      objectReference: {fileID: 0}
+    - target: {fileID: 22478260, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -69
+      objectReference: {fileID: 0}
+    - target: {fileID: 11435716, guid: c609561447ab643e0b85525d25798766, type: 2}
+      propertyPath: m_Text
+      value: '@wickedlyethan - Audio / Writing
+
+        @theconbot - Code / Level Design
+
+        @nathanwentworth - Code / UI
+
+        Emily Muller - Art'
+=======
       value: 99.91561
       objectReference: {fileID: 0}
     - target: {fileID: 11476966, guid: c609561447ab643e0b85525d25798766, type: 2}
@@ -1724,6 +1868,7 @@ Prefab:
     - target: {fileID: 22474188, guid: c609561447ab643e0b85525d25798766, type: 2}
       propertyPath: m_SizeDelta.y
       value: 0
+>>>>>>> master:sailing-game/Assets/Scenes/UI-test.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c609561447ab643e0b85525d25798766, type: 2}
