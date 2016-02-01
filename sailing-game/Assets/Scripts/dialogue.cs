@@ -471,7 +471,7 @@ public class dialogue : MonoBehaviour {
     ans3.onClick.AddListener(B2C);
 
     ans1text.text = "“You cried.”";
-    ans2text.text = "“You cried.”";
+    ans2text.text = "“You started over.”";
     ans3text.text = "“You hunted.”";
   }
 
